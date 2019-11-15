@@ -1,0 +1,327 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<title>Horizonte - Mi casa</title>
+
+	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <meta name="viewport" content="width=device-width" />
+
+	<!--<link rel="apple-touch-icon" sizes="76x76" href="assets/img/apple-icon.png" />-->
+	<link rel="icon" type="image/png" href="assets/img/favicon.png" />
+
+	<!--     Fonts and icons     -->
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
+
+	<!-- CSS Files -->
+	<link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+	<link href="assets/css/material-bootstrap-wizard.css" rel="stylesheet" />
+
+	<link href="https://cdn.materialdesignicons.com/4.5.95/css/materialdesignicons.min.css" rel="stylesheet"/>
+
+	<!-- CSS Just for demo purpose, don't include it in your project -->
+	<link href="assets/css/demo.css" rel="stylesheet" />
+</head>
+
+<body>
+	<div class="image-container set-full-height" style="background-image: url('assets/img/sweethome.jpg')">
+	    <!--   Boton atras   -->
+	    <a onclick="window.history.go(-1); return false;">
+	         <div class="logo-container">
+	            <div class="logo">
+	                <img src="assets/img/back64.png">
+				</div>
+				<div class="brand">
+					Atrás
+				</div>	            
+			</div>			
+	    </a>
+
+		<!--  Made With Material Kit  -->
+		<!--
+		<a class="made-with-mk">
+			<div class="brand">H</div>
+			<div class="made-with">Horizonte</div>
+		</a>
+		-->
+
+	    <!--   Big container   -->
+	    <div class="container">
+	        <div class="row">
+		        <div class="col-sm-8 col-sm-offset-2">
+		            <!--      Wizard container        -->
+		            <div class="wizard-container">
+		                <div class="card wizard-card" data-color="red" id="wizard">
+			                <form action="" method="">
+			                <!--        You can switch " data-color="rose" "  with one of the next bright colors: "blue", "green", "orange", "purple"        -->
+
+		                    	<div class="wizard-header">
+		                        	<h3 class="wizard-title">
+		                        		Mi casa
+		                        	</h3>
+									<h5>En esta sección puedes armar una plantilla del presupuesto 
+										para la casa de tu sueños.
+									</h5>
+		                    	</div>
+								<div class="wizard-navigation">
+									<ul>
+			                            <li><a href="#tipologia" data-toggle="tab">Tipo</a></li>
+			                            <li><a href="#opcionales" data-toggle="tab">Ocionales</a></li>
+			                            <li><a href="#facilities" data-toggle="tab">Lote</a></li>
+			                            <li><a href="#description" data-toggle="tab">Personales</a></li>
+			                        </ul>
+								</div>
+
+		                        <div class="tab-content">
+		                            <div class="tab-pane" id="tipologia">
+											<div class="row">
+													<div class="col-sm-12">
+															<h4 class="info-text"> Tipologia de vivienda</h4>
+													</div>
+													<div class="col-sm-10 col-sm-offset-2">
+														<p>En primer lugar, tienes que elegir el tipo de vivienda que te gustaria tener. <br> <em>Debajo podras ver informacion de la tipologia que seleccionaste</em></em></p>
+													</div>
+											</div>
+											<div class="row">
+													<div class="col-sm-10 col-sm-offset-1">
+														<div class="col-sm-4 col-sm-offset-2">
+															<div class="choice" data-toggle="wizard-radio" rel="tooltip" title="Vivienda tipo A">
+																<input type="radio" name="radio_tipologia" class="radio_tipologia" value="tipo_a">
+																<div class="icon">
+																	<i class="mdi mdi-home-modern"></i>
+																</div>
+																<h6>Vivienda "A"</h6>
+															</div>
+														</div>
+														<div class="col-sm-4 ">
+															<div class="choice" data-toggle="wizard-radio" rel="tooltip" title="Vivienda tipo B">
+																<input type="radio" name="radio_tipologia" class="radio_tipologia" value="tipo_b">
+																<div class="icon">
+																	<i class="material-icons">house</i>
+																</div>
+																<h6>Vivienda "B"</h6>
+															</div>
+														</div>
+														<div class="col-sm-4 col-sm-offset-2">
+																<div class="choice" data-toggle="wizard-radio" rel="tooltip" title="Vivienda tipo C">
+																	<input type="radio" name="radio_tipologia" class="radio_tipologia" value="tipo_c">
+																	<div class="icon">
+																		<i class="mdi mdi-home-variant-outline"></i>
+																	</div>
+																	<h6>Vivienda "C"</h6>
+																</div>
+															</div>
+															<div class="col-sm-4 ">
+																	<div class="choice" data-toggle="wizard-radio" rel="tooltip" title="Vivienda tipo D">
+																		<input type="radio" name="radio_tipologia" class="radio_tipologia" value="tipo_d">
+																		<div class="icon">
+																			<i class="mdi mdi-home"></i>
+																			
+																		</div>
+																		<h6>Vivienda "D"</h6>
+																	</div>
+																</div>
+														
+													</div>
+												</div>
+												<div id="descripcion_tipologia" class="row invisible">
+														<div class="col-sm-10 col-sm-offset-2">
+															<h3>Vivienda "D"</h3>
+															<p>Este tipo de vivienda cuenta con: </p>
+															<ul>
+																
+															</ul>
+														</div>
+												</div>
+
+
+		                            	
+		                            </div>
+		                            <div class="tab-pane" id="opcionales">
+										<div class="row">
+												<div class="col-sm-12">
+														<h4 class="info-text"> Opcionales o caracteristicas</h4>
+													</div>
+												<div class="col-sm-10 col-sm-offset-2">
+													<p>Ahora debes seleccionar las caracteristicas que deseas para tu proxima vivienda. <br> <em>En cada item tendrás información que te ayudará a elegir mejor</em></em></p>
+												</div>
+										</div>
+		                                
+		                                <div class="row invisible">
+												
+												
+												<div class="col-sm-5 col-sm-offset-1">
+													<div class="form-group label-floating">
+														<label class="control-label">City</label>
+														<input type="text" class="form-control" id="exampleInputEmail1">
+													</div>
+												</div>
+												<div class="col-sm-5">
+													<div class="form-group label-floating">
+														<label class="control-label">Country</label>
+														<select name="country" class="form-control">
+															<option disabled="" selected=""></option>
+															<option value="Afghanistan"> Afghanistan </option>
+															<option value="Albania"> Albania </option>
+															<option value="Algeria"> Algeria </option>
+															<option value="American Samoa"> American Samoa </option>
+															<option value="Andorra"> Andorra </option>
+															<option value="Angola"> Angola </option>
+															<option value="Anguilla"> Anguilla </option>
+															<option value="Antarctica"> Antarctica </option>
+															<option value="...">...</option>
+														</select>
+													</div>
+												</div>
+												<div class="col-sm-5 col-sm-offset-1">
+													<div class="form-group label-floating">
+														<label class="control-label">Accommodates</label>
+														<select class="form-control">
+															<option disabled="" selected=""></option>
+															<option>1 Person</option>
+															<option>2 Persons </option>
+															<option>3 Persons</option>
+															<option>4 Persons</option>
+															<option>5 Persons</option>
+															<option>6+ Persons</option>
+														</select>
+													</div>
+												</div>
+												<div class="col-sm-5">
+													<div class="form-group label-floating">
+														<label class="control-label">Rent price</label>
+														<div class="input-group">
+															<input type="text" class="form-control">
+															<span class="input-group-addon">$</span>
+														</div>
+													</div>
+												</div>
+											</div>
+		                            </div>
+		                            <div class="tab-pane" id="facilities">
+											<div class="row">
+													<div class="col-sm-12">
+															<h4 class="info-text"> Lote</h4>
+														</div>
+													<div class="col-sm-10 col-sm-offset-2">
+														<p>Ya casi estamos, ahora debes seleccionar el tipo de lote <br> <em>En cada item tendrás información que te ayudará a elegir mejor</em></em></p>
+													</div>
+											</div>
+		                                <div class="row invisible">
+		                                    <div class="col-sm-5 col-sm-offset-1">
+		                                      <div class="form-group label-floating">
+		                                        	<label class="control-label">Your place is good for</label>
+		                                        	<select class="form-control">
+		                                            	<option disabled="" selected=""></option>
+		                                            	<option>Business</option>
+		                                            	<option>Vacation </option>
+		                                            	<option>Work</option>
+		                                        	</select>
+		                                    	</div>
+		                                    </div>
+		                                    <div class="col-sm-5">
+		                                    	<div class="form-group label-floating">
+		                                        	<label class="control-label">Is air conditioning included ?</label>
+		                                        	<select class="form-control">
+		                                            	<option disabled="" selected=""></option>
+		                                            	<option>Yes</option>
+		                                            	<option>No </option>
+		                                        	</select>
+		                                    	</div>
+		                                    </div>
+		                                    <div class="col-sm-5 col-sm-offset-1">
+		                                    	<div class="form-group label-floating">
+		                                        	<label class="control-label">Does your place have wi-fi?</label>
+		                                        	<select class="form-control">
+		                                    			<option disabled="" selected=""></option>
+		                                            	<option>Yes</option>
+		                                            	<option>No </option>
+		                                        	</select>
+		                                    	</div>
+		                                    </div>
+		                                    <div class="col-sm-5">
+		                                    	<div class="form-group label-floating">
+		                                        	<label class="control-label">Is breakfast included?</label>
+		                                        	<select class="form-control">
+		                                            	<option disabled="" selected=""></option>
+		                                            	<option>Yes</option>
+		                                            	<option>No </option>
+		                                        	</select>
+		                                    	</div>
+	                                    	</div>
+		                                </div>
+		                            </div>
+		                            <div class="tab-pane" id="description">
+											<div class="row">
+													<div class="col-sm-12">
+															<h4 class="info-text"> Datos personales</h4>
+														</div>
+													<div class="col-sm-10 col-sm-offset-2">
+														<p>Por ultimo, para poder tener el presupuesto debes ingresar algunos datos. <br> <em></em></em></p>
+													</div>
+											</div>
+		                                <div class="row invisible">
+		                                    <h4 class="info-text"> Drop us a small description. </h4>
+		                                    <div class="col-sm-6 col-sm-offset-1">
+		                                        <div class="form-group label-floating">
+		                                            <label class="control-label">Place description</label>
+		                                            <textarea class="form-control" placeholder="" rows="9"></textarea>
+		                                        </div>
+		                                    </div>
+		                                    <div class="col-sm-4">
+		                                    	<div class="form-group label-floating">
+		                                            <label class="control-label">Example</label>
+		                                            <p class="description">"The place is really nice. We use it every sunday when we go fishing. It is so awesome."</p>
+		                                        </div>
+		                                    </div>
+		                                </div>
+		                            </div>
+		                        </div>
+		                        <div class="wizard-footer">
+	                            	<div class="pull-right">
+	                                    <input type='button' class='btn btn-next btn-fill btn-danger btn-wd' name='next' value='Siguiente' />
+	                                    <input type='button' class='btn btn-finish btn-fill btn-danger btn-wd' name='finish' value='Enviar' />
+	                                </div>
+	                                <div class="pull-left">
+	                                    <input type='button' class='btn btn-previous btn-fill btn-default btn-wd' name='previous' value='Atrás' />
+	                                </div>
+		                            <div class="clearfix"></div>
+		                        </div>
+			                </form>
+		                </div>
+		            </div> <!-- wizard container -->
+		        </div>
+	        </div> <!-- row -->
+	    </div> <!--  big container -->
+
+	    <div class="footer">
+	        <div class="container text-center">
+	             Made with <i class="fa fa-heart heart"></i> by <a href="http://www.creative-tim.com">Creative Tim</a>. Free download <a href="http://www.creative-tim.com/product/bootstrap-wizard">here.</a>
+	        </div>
+	    </div>
+	</div>
+
+</body>
+	<!--   Core JS Files   -->
+	<script src="assets/js/jquery-3.4.1.min.js" type="text/javascript"></script>
+	<script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
+	<script src="assets/js/jquery.bootstrap.js" type="text/javascript"></script>
+
+	<!--  Plugin for the Wizard -->
+	<script src="assets/js/material-bootstrap-wizard.js"></script>
+
+	<!--  More information about jquery.validate here: http://jqueryvalidation.org/	 -->
+	<script src="assets/js/jquery.validate.min.js"></script>
+
+	<!-- Custom -->
+	<script src="assets/js/scripts/tab_tipologia.js" type="text/javascript"></script>
+
+	<script>
+		$(document).ready(function () {
+			TabTipologias.init();
+		})
+	</script>
+
+</html>

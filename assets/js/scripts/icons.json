@@ -1,0 +1,28 @@
+{
+    "houses": {
+        "type_1":{
+            "name": "mdi mdi-home",
+            "description": "casa comun"
+        },
+        "type_2":{
+            "name": "mdi mdi-house-city",
+            "description": "casa con un edificio atras"
+        },
+        "type_3":{
+            "name": "mdi mdi-home-group",
+            "description": "casitas comunes"
+        },
+        "type_4":{
+            "name": "mdi mdi-home-modern",
+            "description": "casa con una forma moderna"
+        },
+        "type_5":{
+            "name": "mdi mdi-warehouse",
+            "description": "casa con una puerta tipo porton y 3 ventanas"
+        },
+        "type_6":{
+            "name": "mdi mdi-home-variant-outline",
+            "description": "casa blanca con puerta oscura"
+        }
+    }
+}
